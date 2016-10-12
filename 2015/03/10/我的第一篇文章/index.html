@@ -5,25 +5,31 @@
   
   <title>JS--闭包、定时器 | fin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="####什么是闭包? 有什么作用?
+  <meta name="description" content="什么是闭包? 有什么作用?
+ 闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。
 
-闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。    
-function f1(){">
+创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。
+
+当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。*    function f1(){">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS--闭包、定时器">
 <meta property="og:url" content="http://yoursite.com/2015/03/10/我的第一篇文章/index.html">
 <meta property="og:site_name" content="fin">
-<meta property="og:description" content="####什么是闭包? 有什么作用?
+<meta property="og:description" content="什么是闭包? 有什么作用?
+ 闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。
 
-闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。    
-function f1(){">
-<meta property="og:updated_time" content="2016-10-12T16:26:28.000Z">
+创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。
+
+当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。*    function f1(){">
+<meta property="og:updated_time" content="2016-10-12T17:49:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS--闭包、定时器">
-<meta name="twitter:description" content="####什么是闭包? 有什么作用?
+<meta name="twitter:description" content="什么是闭包? 有什么作用?
+ 闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。
 
-闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。    
-function f1(){">
+创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。
+
+当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。*    function f1(){">
   
     <link rel="alternate" href="/atom.xml" title="fin" type="application/atom+xml">
   
@@ -116,10 +122,12 @@ function f1(){">
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>####什么是闭包? 有什么作用?</p>
+        <h4 id="什么是闭包-有什么作用"><a href="#什么是闭包-有什么作用" class="headerlink" title="什么是闭包? 有什么作用?"></a>什么是闭包? 有什么作用?</h4><ul>
+<li><strong> 闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。</strong></li>
+</ul>
+<p>创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。</p>
 <ul>
-<li><p><strong>闭包是指有权限访问另一个函数作用域的变量的函数(就是能够读取其他函数内部变量的函数)。</strong>创建闭包的常见方式就是在一个函数内部创建另一个函数即内部函数。<br><em>当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。</em>    </p>
-<pre><code>function f1(){
+<li>当内部函数“在定义它的作用域”的外部被引用时,就创建了该内部函数的闭包,如果内部函数引用了位于外部函数的变量,当外部函数调用完毕后,这些变量在内存不会被释放,因为闭包需要它们。*    <pre><code>function f1(){
   n=999;
   function f2(){ // f2函数，就是闭包。
     alert(n); // 在Javascript语言中，只有函数内部的子函数才能读取局部变量。
@@ -129,12 +137,13 @@ function f1(){">
 var result=f1();
 result(); // 999
 // 闭包可以简单理解成“定义在一个函数内部的函数”。
-</code></pre><blockquote>
+</code></pre></li>
+</ul>
+<blockquote>
 <p>本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。</p>
 </blockquote>
-</li>
-<li><p><strong>闭包的作用</strong><br>1.可以读取函数内部的变量；<br>2.让这些变量的值始终保持在内存中（在函数a执行完并返回后，闭包使得Javascript的垃圾回收机制GC不会收回a所占用的资源，因为a的内部函数b的执行需要依赖a中的变量）。</p>
-</li>
+<ul>
+<li><strong> 闭包的作用 </strong><br>1.可以读取函数内部的变量；<br>2.让这些变量的值始终保持在内存中（在函数a执行完并返回后，闭包使得Javascript的垃圾回收机制GC不会收回a所占用的资源，因为a的内部函数b的执行需要依赖a中的变量）。</li>
 </ul>
 <p><a href="http://www.jb51.net/article/24101.htm" target="_blank" rel="external">javascript深入理解js闭包</a><br><a href="http://www.cnblogs.com/xiaotie/archive/2011/08/03/2126145.html" target="_blank" rel="external">什么是闭包，我的理解</a></p>
 <p>####setTimeout 0 有什么作用?<br>setTimeout函数用来指定某个函数或某段代码，在多少毫秒之后执行。它返回一个整数，表示定时器的编号，以后可以用来取消这个定时器。即<strong>延时指定的毫秒数再执行指定代码。</strong></p>
@@ -147,8 +156,7 @@ console.log(&apos;延时3s开始执行&apos;)
 clearTimeout(clock);
 // 如果要取消timeout，需要保存setTimeout的返回值，用clearTimeout取消掉这个返还值。
 //clearTimeout()方法用于停止执行setTimeout()。
-</code></pre><p>####代码</p>
-<p>#####下面的代码输出多少？修改代码让 <code>fnArr[i]()</code> 输出 i。使用 两种以上 的方法</p>
+</code></pre><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h5 id="下面的代码输出多少？修改代码让-fnArr-i-输出-i。"><a href="#下面的代码输出多少？修改代码让-fnArr-i-输出-i。" class="headerlink" title="下面的代码输出多少？修改代码让 fnArr[i]() 输出 i。"></a>下面的代码输出多少？修改代码让 <code>fnArr[i]()</code> 输出 i。</h5><p>使用 两种以上 的方法</p>
 <pre><code>var fnArr = [];
 for (var i = 0; i &lt; 10; i ++) { 
   fnArr[i] = function(){ return i; 
